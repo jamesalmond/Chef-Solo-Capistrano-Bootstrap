@@ -110,6 +110,7 @@ Defaults  env_reset
     }
     msudo [
       # install RVM
+      'aptitude update -y',
       'aptitude install -y curl git-core',
       "curl -L http://bit.ly/rvm-install-system-wide | #{sudo} bash",
       %q(sed -i 's/^\[/# [/' /root/.bashrc),
